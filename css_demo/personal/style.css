@@ -1,0 +1,17 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: burlywood;
+    border: 5px solid brown;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 75px;
+}

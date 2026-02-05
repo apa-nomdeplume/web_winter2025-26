@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aliya CSS Demo</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Sorts Mill Goudy" rel="stylesheet">
+        <style>
+            #pink-text {
+                color: pink;
+            }
+
+            .test-class{
+                color:brown; text-align: center;
+            }
+
+            h2 {
+                background-color: blanchedalmond;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <h1>Today, we will learn about adding style with CSS</h1>
+        <h2> This is how we add style with INLINE CSS:</h2>
+        <p style="color: blue;">I want this text to be blue</p>
+        <p style="color: crimson">I want <i>this</i> text to be red.</p>
+        <p style="color: purple; text-align: center; font-size: 20px;">I want this text to be purple, centered and largely sized.</p>
+
+        <h2>This is how we use INTERNAL styling.</h2>
+        <p id="pink-text">I want this text to be pink.</p>
+        <p class="test-class"><br><br>This text is part of a class (in CSS coding, not in school or in any other way)</p>
+        <h3 class="test-class">This is also part of the same class.</h3>
+        <h4 class="test-class">The same is true of this text.</h4>
+
+        <h2>This is how we use EXTERNAL styling.</h2>
+
+        <h2>This is how we use Divs and spans.</h2>
+        <p>This is not part of my Div.</p>
+        <div class="div-test">
+            <p>This sentence <i>is</i> part of my Div.</p>
+            <p>So is this sentence.</p>
+            <img src="images/earth-view-from-the-moon.jpg" width="1245">
+            <p>This is how we use Spans.</p>
+            <p>This <span class="span1">word</span> and this <span class="span2">group of words</span> will be styled differently.</p>
+        </div>
+
+        <h2>This is how we change the font.</h2>
+        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Hello, world!</p>
+        <p style="font-family: 'Sorts Mill Goudy';">Hello again, world!</p>
+    </body>
+</html>

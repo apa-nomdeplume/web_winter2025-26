@@ -1,0 +1,135 @@
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 75px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    background-color: rgb(0, 0, 0);
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 16px
+}
+
+active {
+  background-color: rgb(0, 0, 0); /* Example: Green background */
+  color: white; /* Example: White text */
+  text-decoration: none; /* Remove underline if present */
+}
+
+/* Optional: Add a hover effect for other links */
+a:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.font {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav a {
+    display: block;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse
+}
+
+.name {
+    font-size: small;
+    ;
+}
+
+/* Styling for testing_photo-gallery-1 */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 275px;
+  align-content: center;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 300px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Scrollable Image Gallery */
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  height: 500px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+/* Text caption for each image */
+/* Container holding the image and the text */
+.image-container {
+  position: relative;
+  max-width: 347px;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: antiquewhite;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 75px;
+}
+
+.div-test {
+    background-color: rgba(245, 219, 181, 0.581);
+    text-align: center;
+    color:cadetblue;
+}
+
+.span1 {
+    font-size: 50px;
+}
+
+.span2 {
+    font-size: 10px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: burlywood;
+    border: 5px solid brown;
+}
