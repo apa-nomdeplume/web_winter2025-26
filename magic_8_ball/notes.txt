@@ -1,0 +1,6 @@
+function: magic8ball
+  - getafortune
+    - get a list
+        - ["yes", "no", "maybe"]
+  - showfortune
+    - document.getElementById("response").innerHTML = <fortune>
