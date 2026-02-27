@@ -1,0 +1,302 @@
+/* Horizontal Navigation Bar */
+.top-nav {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+ol li {
+  float: left;
+}
+
+ol li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ol li a:hover {
+  background-color: #ffffff;
+  color:#000000
+}
+
+.horizontal-container {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  position: fixed;
+  height: 155px;
+  z-index: 10000;
+}
+
+.top-nav a {
+    display: block;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.top-nav a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+/* End Horizontal Styling */
+
+
+
+/* Vertical Navigation Bar */
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 75px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    background-color: rgb(0, 0, 0);
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    margin-top: 150px;
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 16px
+}
+
+active {
+  background-color: rgb(0, 0, 0); /* Example: Green background */
+  color: white; /* Example: White text */
+  text-decoration: none; /* Remove underline if present */
+}
+
+/* Optional: Add a hover effect for other links */
+a:hover:not(.active) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.nav a {
+    display: block;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+/* End Vertical Bar */
+
+.font {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse
+}
+
+.name {
+    font-size: small;
+    ;
+}
+
+/* Styling for testing_photo-gallery-1 */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 275px;
+  align-content: center;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 300px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Scrollable Image Gallery */
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  height: 500px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+/* Text caption for each image */
+/* Container holding the image and the text */
+.image-container {
+  position: relative;
+  max-width: 347px;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Making body move below horizontal navigation */
+.content {
+  margin-top: 200px;
+}
+
+
+
+
+
+/* Modal Image CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 15px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 0 auto;
+  height: 0 auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+/* Modal content (image) */
+.modal-content {
+  position: relative;
+  width: auto;
+  height: 90%;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.6);}
+  to {transform: scale(1);}
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Caption of modal image */
+.caption {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-item {
+    width: calc(100% - 20px);
+  }
+}

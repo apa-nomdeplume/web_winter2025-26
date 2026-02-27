@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Inheritance Cycle: The Ancient Language</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <style>
+            .photo-gallery tr td{
+                border-color: white;
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body class="font">
+    <div class="horizontal-container">
+        <div>
+            <img src="images/brisingr-liduen-kvaedhí-rune-fire.jpg" width="130">
+        </div>
+        <div>
+            <div class="menu" style="background: black;">
+                <h1 class="nav-horizontal" style="color: white;">THE INHERITANCE CYCLE</h1>
+                    <ol class="top-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="language_overview.html">Language</a></li>
+                        <li><a href="characters_overview.html">Characters</a></li>
+                        <li><a href="photo-gallery.html" class="active">Photo Gallery</a></li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+
+        <div style="padding: 1px 16px;height:1000px;">
+            <div class="content">
+                <h2 style="font-size: 30px"><u>Photo Gallery</u></h2>
+                
+                <table class="photo-gallery">
+                <tr>
+                    <td style="text-align: center;"><img style="width: auto; height: 500px; border-radius: 5%" src="images/brisingr-liduen-kvaedhí-rune-fire-full-size.jpg" alt="Brisingr Rune" class="gallery-item" onclick="openModal('modal1', 'Brisingr Rune')"></td>
+                    <td style="text-align: center;"><img style="width: auto; height: 500px; border-radius: 5%" src="images/inheritance-cycle-alagaësia-map.jpg" alt="Map of Alagaësia" class="gallery-item" onclick="openModal('modal2', 'Map of Alagaësia')"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Brisingr Rune</td>
+                    <td style="text-align: center;">Map of Alagaësia</td>
+                </tr>
+                <tr>
+                    <td>       </td>
+                    <td>       </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"><img style="width: auto; height: 500px; border-radius: 5%" src="images/saphira.jpg" alt="Saphira" class="gallery-item" onclick="openModal('modal3', 'Saphira')"></td>
+                    <td style="text-align: center;"><img style="width: auto; height: 500px; border-radius: 5%" src="images/thorn.jpg" alt="Thorn" class="gallery-item" onclick="openModal('modal4', 'Thorn')"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Saphira</td>
+                    <td style="text-align: center;">Thorn</td>
+                </tr>
+                <tr>
+                    <td>       </td>
+                    <td>       </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"><img style="width: auto; height: 500px; border-radius: 5%" src="images/glaedr.jpg" alt="Glaedr" class="gallery-item" onclick="openModal('modal4', 'Glaedr')"></td>
+                    <td style="text-align: center;"><img style="width: auto; height: 500px; border-radius: 5%" src="images/fírnen.jpg" alt="Fírnen" class="gallery-item" onclick="openModal('modal4', 'Fírnen')"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Glaedr</td>
+                    <td style="text-align: center;">Fírnen</td>
+                </tr>
+                <tr>
+                    <td>       </td>
+                    <td>       </td>
+                </tr>
+            </table>
+
+            
+        <p><br><br><br><i>Sources: <a href="https://inheritance.fandom.com/wiki/Inheritance_Cycle" target="_blank">The Inheritance Cycle | Inheriwiki</a></i></p>
+            </div>
+        </div>
+
+<div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="images/brisingr-liduen-kvaedhí-rune-fire-full-size.jpg" alt="Brisingr Rune" class="modal-content">
+  <div class="caption">Brisingr Rune</div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="images/inheritance-cycle-alagaësia-map.jpg" alt="Map of Alagaësia" class="modal-content">
+  <div class="caption">Map of Alagaësia</div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="images/saphira.jpg" alt="Saphira" class="modal-content">
+  <div class="caption">Saphira</div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="images/thorn.jpg" alt="Thorn" class="modal-content">
+  <div class="caption">Thorn</div>
+</div>
+
+<div id="modal5" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="images/glaedr.jpg" alt="Glaedr" class="modal-content">
+  <div class="caption">Glaedr</div>
+</div>
+
+<div id="modal6" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="images/fírnen.jpg" alt="Fírnen" class="modal-content">
+  <div class="caption">Fírnen</div>
+</div>
+    </body>
+</html>
+
